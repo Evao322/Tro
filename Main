@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<title>Macau Travel</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="/static/img/icon.jpg" type="image/png">
+
+        <!--=============== ICON ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4218a60d7a.js" crossorigin="anonymous"></script>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link href="/static/css/swiper-bundle.min.css"rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link href="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/css/styles.css"rel="stylesheet">
+
+        <title>COMP311 | P2104672</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="{% url 'home' %}" class="nav__logo">Macau Travel</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#sightseeing" class="nav__link">Sightseeing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#cafe" class="nav__link">Café</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#workshop" class="nav__link">Workshop</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/home1.jpg" alt="Macau Ruins of St. Paul's" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Traveling in Macau</span>
+                        <h1 class="home__data-title">A harmonious <br> blend of  <b>Art</b> <br> and History</b></h1>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <!--==================== Sightseeing ====================-->
+            <section class="discover section" id="sightseeing">
+                <h2 class="section__title">Unveil the Past, Embrace Serenity.</h2>
+                <!--==================== Ruins of St. Paul's====================-->
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Ruins of St. Paul's</h2>
+                        <p class="about__description">The Ruins of St. Paul's refer to the facade of what was originally the Church of Mater Dei built in 1602-1640, destroyed by fire in 1835, and the ruins of St. Paul's College, which stood adjacent to the Church. As a whole, the old Church of Mater Dei, St. Paul's College and Mount Fortress were all Jesuit constructions and formed what can be perceived as the Macao's "acropolis". Close by, the archaeological remains of the old College of St. Paul stand witness to what was the first western-style university in the Far East, with an elaborate academic programme. Nowadays, the facade of the Ruins of St. Paul's functions symbolically as an altar to the city.
+                        </p>
+                        <a href="https://www.google.com/maps/dir/22.1911057,113.5587487/22.1974864,113.5408697/@22.2012593,113.5291023,14z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m0!3e3?entry=ttu" target=_blank>
+                        <p><br><i class="fa-solid fa-map-location-dot" style="color: #1f5141;"></i>  How to get there<br/></p>
+                        </a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/St.jpg" alt="" class="discover__img">
+                        </div>
+                    </div>
+            </section>
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Guide to the Ruins of St. Paul's</h2>
+                <div class="video__container container">
+                    <p class="video__description">Ruins of St. Paul's</p>
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/video/ruins.mp4" type="video/mp4">
+                        </video>
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+<br><br><br><br>
+    <!--====================Coloane Village====================-->
+    <section class="discover section" id="sightseeing">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title">Coloane Village</h2>
+                <p class="about__description">Setting foot in Coloane Village is just like stepping into a time-machine, where natural landscape and the seashore of Hengqin come into view. Walking through the alleys to look for places of interests and local delicacy. You can also shop for local fishery products, and immerse yourself in the atmosphere of a quaint fishing village.</p>
+
+                <a href="https://www.google.com/maps/place/%E5%8D%97%E6%B5%B7/@22.1190613,113.5480841,16.08z/data=!4m18!1m11!4m10!1m4!2m2!1d113.557504!2d22.1906658!4e1!1m3!2m2!1d113.5498216!2d22.1190936!3e3!3m5!1s0x317e79d4f0390dcf:0xd347a86ae63c44c9!8m2!3d15.488092!4d114.404754!16zL20vMGp0bTg?entry=ttu" target=_blank>
+                <p><br><i class="fa-solid fa-map-location-dot" style="color: #1f5141;"></i>  How to get there<br/></p>
+                </a>
+            </div>
+
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/village.jpeg" alt="" class="discover__img">
+                </div>
+            </div>
+
+            <div class="experience__img grid">
+                <div class="experience__overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/village3.jpeg" alt="" class="experience__img-one">
+                </div>
+
+                <div class="experience__overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/village2.jpeg" alt="" class="experience__img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+<br><br>
+
+            <!--==================== Cafe ====================-->
+    <section class="discover section" id="cafe">
+        <h2 class="section__title">Top 3 coffee shop <br> you should visit.</h2>
+        <!--==================== Mind Cafe ====================-->
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title">Mind Cafe</h2>
+                <p class="about__description">Mind Cafe is a coffee specialty shop founded by a group of locals who are passionate about coffee,
+                        design, and lifestyle. They specialize in coffee-related products, retail, design, and in-store consumption.
+                </p>
+                <a href="https://www.instagram.com/mindcafe_design/" target="_blank" class="footer__social">
+                    <i class="fa-brands fa-instagram" style="color: #1d4e37;"></i>  Mind Cafe
+                </a>
+
+                <p><br>Address:<br/></p>
+                <a href="https://www.google.com/maps/place/%E5%83%91%E6%A8%82%E9%96%A3/@22.200778,113.5432711,17z
+                /data=!3m1!4b1!4m6!3m5!1s0x34017ae11cf97353:0x1cfb2e31fb1d76af!8m2!3d22.200778!4d113.545846!16s%2Fg%2F11b6dp0kcf?entry=ttu" target=_blank>
+                <i class="fa-solid fa-location-dot" style="color: #1f5149;"></i>  10A-10B, Edf. Kiu Lok, Rua do Ultramar, Macau
+                </a>
+            </div>
+
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/mindcafe.jpg" alt="" class="discover__img">
+                </div>
+            </div>
+        </div>
+<br><br><br><br>
+    <!--==================== Cotiz ====================-->
+
+        <div class="about__container container grid">
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/cotiz2.jpg" alt="Lisboeta Macau Branch" class="about__img-one">
+                </div>
+                <div class="about__img-overlay" >
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/cotiz3.jpg" alt="Nam Van Macau Branch" class="about__img-two">
+                </div>
+            </div>
+
+            <div class="about__data">
+                <h2 class="section__title about__title">The Cotiz</h2>
+                <p class="about__description">
+                    Cotiz started as an Instagram shop and grew from a small store in the alley to two branches.
+                    The female owner studied at Le Cordon Bleu in Japan and returned to Macau to open Cotiz.
+                    The new store is located in the Lisboa Palace Hotel, and its interior design is themed around the traditional machiya style of Kyoto, Japan,
+                    showcasing a blend of Japanese aesthetics and cultural ambiance. The signature product is the "Crispy Puff," along with other coffee and dessert offerings.
+                </p>
+
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                    <i class="fa-brands fa-instagram" style="color: #1d4e37;"></i> The Cotiz
+                </a>
+                <br>
+                <p><br>
+                Address:<br/></p>
+                <a href="https://www.google.com/maps/search/%E6%BE%B3%E9%96%80%E5%8D%97%E7%81%A3%E5%A4%A7%E9%A6%AC%E8%B7%AF343%E8%99%9FRC-C/@22.1912493,113.4629288,13z?entry=ttu" target=_blank>
+                <i class="fa-solid fa-location-dot" style="color: #1f5149;"></i>  No.343 Av. da Praia Grande, Macao
+                </a>
+
+                <a href="https://www.google.com/maps/search/%E6%BE%B3%E9%96%80%E8%B7%AF%E6%B0%B9%E5%
+                    A1%AB%E6%B5%B7%E5%8D%80%E6%BA%9C%E5%86%B0%E8%B7%AF128%E8%99%9F%E8%91%A1%E4%BA%AC%E4%BA%BA%E9%85%92%E5%BA%97L01
+                    %E6%A8%93R08A-R12%E8%99%9F%E8%88%96/@22.1414811,113.5716961,18.04z?hl=en&entry=ttu" target=_blank>
+                <br> <i class="fa-solid fa-location-dot" style="color: #1f5149;"></i>  No. 128 R. da Patinagem, piso 01 do Hotel do "Lisboeta", Macau. Unit No. R08A-R12
+                </a>
+            </div>
+        </div>
+<br><br><br><br>
+<!--==================== Céleste Artisan ====================-->
+
+        <div class="about__container container grid">
+
+            <div class="about__data">
+                <h2 class="section__title about__title">Céleste Artisan</h2>
+                <p class="about__description">
+                    Céleste Artisan 943 appears like a normal café but is actually a vibrant and artistic space for relaxation and mind restoration.
+                    It is composed of three zones, served with different functions but embody the same craftsman’s spirit.  As its name implies,
+                    “Céleste” derives from a Latin word which means “Heavenly” or “Paradise”, indicating that the space is a relaxing realm for everyone to unwind with the touch of “Art of Living”.
+                </p>
+
+                <a href="https://www.instagram.com/celeste.artisan.943/" target="_blank" class="footer__social">
+                    <i class="fa-brands fa-instagram" style="color: #1d4e37;"></i> Céleste Artisan
+                </a>
+                <br>
+                <p><br>
+                Address:<br/></p>
+                <a href="https://www.google.com/maps/place/22%C2%B009'20.4%22N+113%C2%B033'33.9%22E/@22.1556636,113.5594161,18z/data=!4m4!3m3!8m2!3d22.1556636!4d113.5594161?entry=ttu" target=_blank>
+                <i class="fa-solid fa-location-dot" style="color: #1f5149;"></i>  No. 21, G/F, Rua de Fernão Mendes Pinto, Taipa
+                </a>
+            </div>
+
+
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/celeste2.jpg" class="about__img-one">
+                </div>
+                <div class="about__img-overlay" >
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/celeste.jpg"  class="about__img-two">
+                </div>
+            </div>
+
+        </div>
+    </section>
+<br><br>
+            <!--==================== Workshop ====================-->
+    <section class="about section" id="workshop">
+        <h2 class="section__title">Hands-on Creation, Infinite Sentiments.</h2>
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title">Shimmer Studio</h2>
+                    <p style='margin: 20px'>
+                        微光研習室 ⟡ 𝗦𝗵𝗶𝗺𝗺𝗲𝗿 𝗦𝘁𝘂𝗱𝗶𝗼<br><br>
+                        ➺ 金工飾品體驗班&團體活動𝘾𝙪𝙨𝙩𝙤𝙢𝙞𝙨𝙚𝙙 𝘾𝙤𝙪𝙧𝙨𝙚<br><br>
+                        ➺ 純銀飾品訂製&維修𝙎𝙡𝙞𝙫𝙚𝙧 𝙅𝙚𝙬𝙚𝙡𝙧𝙮 & 𝙍𝙚𝙥𝙖𝙞𝙧<br><br>
+                        ➺ 金工創作 𝘾𝙧𝙚𝙖𝙩𝙞𝙫𝙚 𝙈𝙚𝙩𝙖𝙡𝙨𝙢𝙞𝙩𝙝𝙨<br>
+                    </p>
+                <div class="centered-contents">
+                    <a class="button" href="https://heylink.me/shimmerstudio.mo/">Register</a>
+                </div>
+                <p>Address:<br/></p>
+                <a href="https://www.google.com/maps/place/%E6%97%A5%E6%A8%82%E7%8E%BB%E7%92%83%E9%91%B2%E5%B5%8C%E5%B7%A5%E4%BD%9C%E5%AE%A4+Iridescent+Glass+Macau/@22.1979773,113.5422938,17z/
+                        data=!3m1!4b1!4m6!3m5!1s0x34017b70a83353d5:0x147811920ddc96e4!8m2!3d22.1979724!4d113.5448687!16s%2Fg%2F11v3nsb5z3?entry=ttu" target=_blank>
+                    <i class="fa-solid fa-location-dot" style="color: #1f5149;"></i>  MacaoEstr. do Cemiterio, No.13, Edificio Wan Keng, Ground Floor A
+                </a>
+                <br>
+            </div>
+
+            <div class="about__img">
+                <!--outlook-->
+                <div class="about__img-overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/work2.png" alt="" class="about__img-two">
+                </div>
+
+                <div class="about__img-overlay">
+                    <img src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/img/work1.jpg" alt="" class="about__img-one">
+                </div>
+            </div>
+        </div>
+    </section>
+        </main>
+
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Macau Travel</h3>
+                        <p class="footer__description">We are looking forward to seeing you!</p>
+                    </div>
+                </div>
+                <div class="footer__rights">
+                    <p class="footer__copy">COMP311-311</p>
+                    <div class="footer__terms">
+                        <p class="footer__terms-link">P2104672</p>
+                        <p class="footer__terms-link">LO PUI I</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/js/main.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="C:\Users\Loeva\OneDrive\桌面\comp311\P2104672/static/js/main.js"></script>
+    </body>
+</html>
+
+
+
+
